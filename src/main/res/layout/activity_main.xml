@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/Tela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="50dp"
+        android:text="Escolha o seu produto: "
+        android:textColor="@color/Red"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkarroz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tela"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Arroz (R$ 2,69)"
+
+        />
+
+    <CheckBox
+        android:id="@+id/chkleite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkarroz"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Leite (R$ 5.00)"
+
+        />
+
+    <CheckBox
+        android:id="@+id/chkcarne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkleite"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Carne (R$ 9.70)"
+
+        />
+
+    <CheckBox
+        android:id="@+id/chkfeijao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkcarne"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Feijão (R$ 2.70)"
+
+        />
+
+    <Button
+        android:id="@+id/bttotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkfeijao"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/Red"
+        android:text="Fechar pedido" />
+
+</RelativeLayout>
